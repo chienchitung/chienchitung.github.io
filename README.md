@@ -3,7 +3,7 @@
 Live site: https://chienchitung.github.io
 
 Preview
-![preview](assets/img/preview.png)
+![preview](assets/img/preview-20250929020352.png)
 
 What’s inside
 - Home: Hero section with role tag, social links, and portrait.
