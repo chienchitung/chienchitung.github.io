@@ -20,3 +20,23 @@ Live site: https://chienchitung.github.io
 - Icons & animations: Boxicons, ScrollReveal.
 - Hosting & CI: GitHub Pages with GitHub Actions workflow (`.github/workflows/pages.yml`).
 
+
+## Run locally
+Serve the static site on your machine using Python’s built-in HTTP server.
+
+1) Open a terminal and change into the project directory:
+
+```bash
+cd /path/to/portfolio-website
+```
+
+2) Start a local server on port 8000:
+
+```bash
+python3 -m http.server 8000
+```
+
+3) In your browser, visit:
+
+http://localhost:8000
+
