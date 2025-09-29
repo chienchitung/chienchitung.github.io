@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- i18n alternates -->
+    <link rel="alternate" href="../" hreflang="en">
+    <link rel="alternate" href="../" hreflang="x-default">
+    <link rel="alternate" href="./" hreflang="zh-Hant-TW">
+
+        <title>作品集｜Jackie Tung</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Chien-Chi (Jackie) Tung</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link" data-i18n="nav.home">首頁</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-i18n="nav.about">關於</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link" data-i18n="nav.experience">經歷</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" data-i18n="nav.skills">技能</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link" data-i18n="nav.education">學歷</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link" data-i18n="nav.projects">專案</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link" data-i18n="nav.contact">聯絡</a></li>
+                    </ul>
+                </div>
+
+                <button id="lang-toggle" class="nav__lang" type="button" aria-label="切換語言為 English" title="English">繁中</button>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <!-- Decorative background bubbles -->
+                <div class="hero-bg" aria-hidden="true">
+                    <span class="hero-blob hero-blob--blue"></span>
+                    <span class="hero-blob hero-blob--green"></span>
+                    <span class="hero-blob hero-blob--purple"></span>
+                </div>
+                <div class="home__data">
+                    <span class="hero__tag">數位成長分析師</span>
+                    <h1 class="home__title">嗨，<br>我是 <span class="home__title-color">Jackie Tung</span></h1>
+                    <div class="hero__cta">
+                        <a href="#experience" class="button">查看經歷</a>
+                        <a href="#about" class="button button--outline">關於我</a>
+                        <a href="../CV_Jackie%20Tung.pdf" class="button button--outline" download="Jackie_Tung_CV.pdf" aria-label="下載履歷（PDF）">下載履歷</a>
+                    </div>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/chien-chi-tung" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.jtdatastoryteller.com/" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="Substack">
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 448 511.471" aria-hidden="true">
+                            <path fill="currentColor" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/chienchitung" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <div class="hero__portrait">
+                                <img class="home__photo" src="../assets/img/jackie.jpg" alt="Jackie Tung 大頭照">
+                    </div>
+                </div>
+
+                <!-- Scroll indicator -->
+                <div class="scroll-indicator">
+                    <span class="scroll-indicator__text">向下捲動探索</span>
+                    <div class="scroll-indicator__mouse">
+                        <span class="scroll-indicator__dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">關於我</h2>
+                <p class="about__lead">熱衷運用資料分析，推動電子商務與零售領域的數位成長與轉型。</p>
+
+                <div class="about-cards bd-grid">
+                    <div class="about-card">
+                        <i class='bx bx-briefcase about-card__icon'></i>
+                        <h3 class="about-card__title">專業</h3>
+                        <p class="about-card__text">具電子商務與資料分析背景的數位成長分析師，現於 IKEA 專注推動數位轉型。</p>
+                    </div>
+                    <div class="about-card">
+                        <i class='bx bx-user about-card__icon about-card__icon--green'></i>
+                        <h3 class="about-card__title">個人</h3>
+                        <p class="about-card__text">熱愛解決問題、打造資料產品與分享知識。非工作時投入音樂與表演藝術，擅長鋼琴演奏。</p>
+                    </div>
+                    <div class="about-card">
+                        <i class='bx bx-world about-card__icon about-card__icon--purple'></i>
+                        <h3 class="about-card__title">語言</h3>
+                        <ul class="lang-list">
+                            <li><span>中文</span><span class="lang-level">母語</span><span class="lang__bar"><span class="lang__fill" style="width:100%"></span></span></li>
+                            <li><span>英文</span><span class="lang-level">專業</span><span class="lang__bar"><span class="lang__fill" style="width:90%"></span></span></li>
+                            <li><span>德文</span><span class="lang-level">基礎</span><span class="lang__bar"><span class="lang__fill" style="width:20%"></span></span></li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <i class='bx bx-heart about-card__icon about-card__icon--red'></i>
+                        <h3 class="about-card__title">志工服務</h3>
+                        <ul class="about-card__list">
+                            <li>104 人力銀行履歷健檢</li>
+                            <li>英語導覽志工</li>
+                            <li>醫院鋼琴演出</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EXPERIENCE =====-->
+            <section class="about section" id="experience">
+                <h2 class="section-title">經歷</h2>
+                <div class="about__container bd-grid about__container--single">
+                    <div>
+                        <h2 class="about__subtitle">工作經歷</h2>
+
+                        <!-- IKEA · Digital Growth Analyst / PO -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data">
+                                <div class="exp__header">
+                                    <div class="exp__head-left">
+                                        <img class="exp__logo" src="https://logo.clearbit.com/ikea.com" alt="IKEA logo">
+                                        <h3 class="experience__title">IKEA · 數位成長分析師 / 產品負責人</h3>
+                                    </div>
+                                    <span class="exp__badge">2022/10 – 至今</span>
+                                </div>
+                                <span class="experience__location">台北，台灣 · 北亞（台灣、香港與澳門）</span>
+                                <ul class="experience__achievements">
+                                    <li>帶領跨部門團隊（2 位 UX 設計師、3 位品類同仁）啟動 37 個 A/B 測試；個人化工具創造 740 萬美元增量營收，2023 年占電商營收 13.8%。</li>
+                                    <li>透過深度訪談盤點跨團隊流程痛點，優化個人化工具相關作業並制定可擴充的 SOP。</li>
+                                    <li>主導個人化產品藍圖，於 2024 年落地 3 個關鍵用例：排序推薦、搜尋關鍵字推薦、搜尋框商品推薦。</li>
+                                    <li>與外部夥伴及跨部門合作建置 GA4 與客群分群儀表板，協助商業團隊產出資料洞察。</li>
+                                    <li>推動資料素養與 Tableau 內訓，課程平均滿意度 4.8/5，強化團隊能力。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- IKEA · eCommerce Navigator -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data">
+                                <div class="exp__header">
+                                    <div class="exp__head-left">
+                                        <img class="exp__logo" src="https://logo.clearbit.com/ikea.com" alt="IKEA logo">
+                                        <h3 class="experience__title">IKEA · 電商營運規劃（eCommerce Navigator）</h3>
+                                    </div>
+                                    <span class="exp__badge">2021/09 – 2022/10</span>
+                                </div>
+                                <span class="experience__location">台北，台灣 · 北亞（台灣、香港與澳門）</span>
+                                <ul class="experience__achievements">
+                                    <li>執行損益（P&amp;L）分析，促成 2022 年北亞市場整體利潤提升 1%。</li>
+                                    <li>建立電商營收儀表板並分析 TW/HK 市場表現；於年度報告呈現成長缺口與策略機會。</li>
+                                    <li>提供市場績效洞察、發掘成長機會並支援活動成效，促成台灣 +32%、香港 +13% 的銷售成長（2022）。</li>
+                                    <li>建立銷售預測模型與即時決策報表，支援春節、雙 11、免運等重要檔期。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- friDay Shopping · Sr. Business Planning Analyst -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data">
+                                <div class="exp__header">
+                                    <div class="exp__head-left">
+                                        <img class="exp__logo" src="https://logo.clearbit.com/friday.tw" alt="friDay Shopping logo">
+                                        <h3 class="experience__title">friDay 購物（遠時數位）· 高級商業規劃分析師</h3>
+                                    </div>
+                                    <span class="exp__badge">2020/10 – 2021/09</span>
+                                </div>
+                                <span class="experience__location">台北，台灣</span>
+                                <ul class="experience__achievements">
+                                    <li>建立並維護獎酬計算模型；製作方案文件、員工對帳與內部溝通素材，確保跨部門一致。</li>
+                                    <li>與資料工程與業務團隊合作，3 個月內打造 Google Data Studio 流量儀表板，實現近即時監控。</li>
+                                    <li>撰寫與設計 SQL 以支援臨時分析與高階管理報告，促進決策制定。</li>
+                                    <li>設計並上線 10+ 份自動化 Tableau 儀表板，提供可行的視覺化以監控各線業務 KPI。</li>
+                                    <li>將例行 SQL 建置於 ETL 系統，提升報表效率 25%；以 Python 自動化郵件報表，降低人工作業並提高頻率。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Circles.Life · Billing Operations Analyst -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data">
+                                <div class="exp__header">
+                                    <div class="exp__head-left">
+                                        <img class="exp__logo" src="https://logo.clearbit.com/circles.life" alt="Circles.Life logo">
+                                        <h3 class="experience__title">Circles.Life · 帳務營運分析師</h3>
+                                    </div>
+                                    <span class="exp__badge">2019/09 – 2020/10</span>
+                                </div>
+                                <span class="experience__location">台北，台灣</span>
+                                <ul class="experience__achievements">
+                                    <li>提供付款趨勢與帳務根因洞察，3 個月內將升級案件比率由 10% 降至 1%，推動高影響力流程調整。</li>
+                                    <li>設計並導入更有效率的帳務 SOP；優化 Excel 表單與自動化功能，協助利害關係人更精準追蹤減免與退款。</li>
+                                    <li>主導委外催收專案並協同跨部門推進，3 個月內將最終催收成功率由 69% 提升至 82%。</li>
+                                    <li>以 SQL 建置 30+ 份營運與財務報表，分析 1 萬筆以上資料以支援決策。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Circles.Life · Operations Associate -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                            </div>
+                            <div class="experience__data">
+                                <div class="exp__header">
+                                    <div class="exp__head-left">
+                                        <img class="exp__logo" src="https://logo.clearbit.com/circles.life" alt="Circles.Life logo">
+                                        <h3 class="experience__title">Circles.Life · 營運專員</h3>
+                                    </div>
+                                    <span class="exp__badge">2019/04 – 2020/10</span>
+                                </div>
+                                <span class="experience__location">台北，台灣</span>
+                                <ul class="experience__achievements">
+                                    <li>協調工程與產品團隊解決系統性根因（訂單、配送、門號啟用等），使升級案件率下降 28%。</li>
+                                    <li>管理 2000+ 筆訂單的端到端作業流程，與物流與工程團隊緊密合作以確保正確出貨與門號啟用。</li>
+                                    <li>與物流夥伴檢視配送問題並推動流程最佳化，首配成功率提升 13%。</li>
+                                    <li>於 2 個月內向台灣總經理與總部提交 3 份分析報告（催收、通聯紀錄、流失），支援留存策略。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">技能</h2>
+                <p class="skills__intro">快速概覽我的技術、商務與產業專長。</p>
+
+                <div class="skills__groups bd-grid">
+                    <!-- Technical Skills -->
+                    <div class="skills__group">
+                        <h3 class="skills__subtitle">技術技能</h3>
+                        <div class="skills__badges">
+                            <span class="skill-badge"><i class='bx bx-data'></i> MySQL</span>
+                            <span class="skill-badge"><i class='bx bxl-python'></i> Python</span>
+                            <span class="skill-badge"><i class='bx bxs-dashboard'></i> Tableau</span>
+                            <span class="skill-badge"><i class='bx bx-bar-chart-alt-2'></i> Power BI</span>
+                            <span class="skill-badge"><i class='bx bxl-google'></i> Looker Studio</span>
+                            <span class="skill-badge"><i class='bx bx-notepad'></i> Metabase</span>
+                            <span class="skill-badge"><i class='bx bxl-google'></i> Google Analytics (GA4)</span>
+                            <span class="skill-badge"><i class='bx bx-table'></i> Excel</span>
+                            <span class="skill-badge"><i class='bx bx-cloud'></i> Google Cloud Platform (GCP)</span>
+                        </div>
+                    </div>
+
+                    <!-- Business Skills -->
+                    <div class="skills__group">
+                        <h3 class="skills__subtitle">商業技能</h3>
+                        <div class="skills__badges">
+                            <span class="skill-badge"><i class='bx bx-line-chart'></i> 資料分析</span>
+                            <span class="skill-badge"><i class='bx bx-task'></i> 產品管理</span>
+                            <span class="skill-badge"><i class='bx bxs-dashboard'></i> 商業智慧</span>
+                            <span class="skill-badge"><i class='bx bx-dollar-circle'></i> 損益（P&amp;L）</span>
+                            <span class="skill-badge"><i class='bx bx-trending-up'></i> 銷售預測</span>
+                            <span class="skill-badge"><i class='bx bx-repost'></i> 數位轉型</span>
+                            <span class="skill-badge"><i class='bx bx-task'></i> 專案管理</span>
+                            <span class="skill-badge"><i class='bx bx-test-tube'></i> A/B 測試</span>
+                            <span class="skill-badge"><i class='bx bx-book'></i> Confluence</span>
+                            <span class="skill-badge"><i class='bx bxl-trello'></i> Trello</span>
+                        </div>
+                    </div>
+
+                    <!-- Industry Knowledge -->
+                    <div class="skills__group">
+                        <h3 class="skills__subtitle">產業知識</h3>
+                        <div class="skills__badges">
+                            <span class="skill-badge"><i class='bx bx-cart'></i> 電子商務</span>
+                            <span class="skill-badge"><i class='bx bx-store'></i> 零售</span>
+                            <span class="skill-badge"><i class='bx bx-home'></i> 家居</span>
+                            <span class="skill-badge"><i class='bx bx-wifi'></i> 電信</span>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="skills__group skills__group--full">
+                        <h3 class="skills__subtitle">證照</h3>
+                        <div class="skills__badges">
+                            <span class="skill-badge"><i class='bx bx-badge-check'></i> iPAS+ AI Application Planner (Beginner) — IDA</span>
+                            <span class="skill-badge"><i class='bx bx-badge-check'></i> Certificate of Completion Google Cloud — Google Digital Talent Program</span>
+                            <span class="skill-badge"><i class='bx bx-badge-check'></i> Gemini Certified Educator — Google for Education</span>
+                            <span class="skill-badge"><i class='bx bx-badge-check'></i> SQL (Basic) Certificate — HackerRank</span>
+                            <span class="skill-badge"><i class='bx bx-badge-check'></i> SQL (Intermediate) Certificate — HackerRank</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="about section" id="education">
+                <h2 class="section-title">學歷</h2>
+
+                <div class="about__container bd-grid about__container--single">
+                    <div>
+                        <h2 class="about__subtitle">學術背景</h2>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data">
+                                <div class="edu__header">
+                                    <div class="edu__head-left">
+                                        <img class="edu__logo" src="https://logo.clearbit.com/scu.edu.tw" alt="Soochow University logo">
+                                        <h3 class="education__title">MBA · 資料科學</h3>
+                                    </div>
+                                    <div class="edu__meta">
+                                        <span class="edu__badge">2023/09 – 2025/08</span>
+                                        <span class="edu__gpa">GPA：3.93/4.0</span>
+                                    </div>
+                                </div>
+                                <span class="education__studies">東吳大學，台北，台灣</span>
+                                <ul class="education__achievements">
+                                    <li>碩論：結合 AI 助教的鷹架式數位遊戲式學習系統：以 Excel 教育為例。</li>
+                                    <li>研討會論文：
+                                        <ul>
+                                            <li>Integrating AI Tutors in Game-Based Learning to Enhance Excel Education — 錄取 IEEE ICCE-TW 2025。</li>
+                                            <li>Enhancing Home Furnishing App Usability: A Text Mining Approach Using BERT and Large Language Models — 錄取 AMLDS 2025。</li>
+                                        </ul>
+                                    </li>
+                                    <li class="edu__awards"><i class='bx bxs-trophy edu__awards-icon' aria-hidden="true"></i><span class="edu__awards-label">獎項與榮譽：</span>
+                                        <ul>
+                                            <li>AMLDS 2025 — 最佳口頭發表</li>
+                                            <li>新創千里馬創業競賽 — 電梯簡報獎（2025）</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data">
+                                <div class="edu__header">
+                                    <div class="edu__head-left">
+                                        <img class="edu__logo" src="https://logo.clearbit.com/ntust.edu.tw" alt="NTUST logo">
+                                        <h3 class="education__title">MBA · 企業管理</h3>
+                                    </div>
+                                    <div class="edu__meta">
+                                        <span class="edu__badge">2015/09 – 2018/02</span>
+                                        <span class="edu__gpa">GPA：3.85/4.0</span>
+                                    </div>
+                                </div>
+                                <span class="education__studies">國立台灣科技大學，台北，台灣</span>
+                                <ul class="education__achievements">
+                                    <li>碩論：個人社群影響力量表之建構。</li>
+                                    <li class="edu__awards"><i class='bx bxs-trophy edu__awards-icon' aria-hidden="true"></i><span class="edu__awards-label">獎項與榮譽：</span>
+                                        <ul>
+                                            <li>校園傑出青年（2017）</li>
+                                            <li>3MT 英語簡報決賽（2017）</li>
+                                            <li>康寧未來創新家競賽 — 佳作（2015）</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data">
+                                <div class="edu__header">
+                                    <div class="edu__head-left">
+                                        <img class="edu__logo" src="https://logo.clearbit.com/technikum-wien.at" alt="FH Technikum Wien logo">
+                                        <h3 class="education__title">交換學生 · 資訊系統管理</h3>
+                                    </div>
+                                    <div class="edu__meta">
+                                        <span class="edu__badge">2017/08 – 2018/02</span>
+                                        <span class="edu__gpa">成績：2（1 為最高）</span>
+                                    </div>
+                                </div>
+                                <span class="education__studies">維也納科技大學（FH Technikum Wien），奧地利，維也納</span>
+                                <ul class="education__achievements">
+                                    <li>課程（16 ECTS）：
+                                        <ul>
+                                            <li>全球經濟</li>
+                                            <li>學術寫作</li>
+                                            <li>德語與奧地利文化</li>
+                                            <li>創新管理概論</li>
+                                            <li>跨文化溝通與語言</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- BBA · Yuan Ze University -->
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+                            <div class="education__data">
+                                <div class="edu__header">
+                                    <div class="edu__head-left">
+                                        <img class="edu__logo" src="https://logo.clearbit.com/yzu.edu.tw" alt="Yuan Ze University logo">
+                                        <h3 class="education__title">企業管理學士（B.B.A.）</h3>
+                                    </div>
+                                    <div class="edu__meta">
+                                        <span class="edu__badge">2011/09 – 2015/06</span>
+                                        <span class="edu__gpa">GPA：3.89/4.0</span>
+                                    </div>
+                                </div>
+                                <span class="education__studies">元智大學，桃園，台灣</span>
+                                <ul class="education__achievements">
+                                    <li class="edu__awards"><i class='bx bxs-trophy edu__awards-icon' aria-hidden="true"></i><span class="edu__awards-label">獎項與榮譽：</span>
+                                        <ul>
+                                            <li>Beta Gamma Sigma（2015）</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title">專案</h2>
+                
+                <p class="projects__text">精選作品，涵蓋資料分析、實驗與產品管理，領域包含電商與電信。</p>
+
+                <div class="projects__container bd-grid">
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project1.png" type="image/png">
+                                <img src="../assets/img/project1.png" alt="IKEA Personalization Use Cases & Experimentation">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>IKEA · 數位成長分析師 / 產品負責人</h3>
+                                <p>開發並上線多個個人化用例（排序推薦、搜尋關鍵字建議、搜尋框商品推薦），驅動實驗成效。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project2.png" type="image/png">
+                                <img src="../assets/img/project2.png" alt="IKEA North Asia Annual E‑commerce Performance Report">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>IKEA · 電商營運分析師</h3>
+                                <p>製作年度電商績效報告，分析市場成長缺口並向高階主管呈現洞察。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project3.png" type="image/png">
+                                <img src="../assets/img/project3.png" alt="friDay 購物 商業規劃分析 儀表板專案">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>friDay 購物 · 資深經營分析師</h3>
+                                <p>建立自動化 Tableau 銷售儀表板，提供利害關係人快速、自助查看業績與趨勢。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project4.png" type="image/png">
+                                <img src="../assets/img/project4.png" alt="Circles.Life 營運與帳務分析">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>Circles.Life · 營運與帳務</h3>
+                                <p>從 0 到 1 建立委外催收流程（政策、SOP、廠商對接），將最終催收成功率自 69% 提升至 82%。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project5.png" type="image/png">
+                                <img src="../assets/img/project5.png" alt="App Reviews AI – Analyze App Store and Google Play reviews for deep insights">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>App Reviews AI</h3>
+                                <p>整合並分析 App Store 與 Google Play 評論，萃取主題、情緒、功能需求與痛點等深層洞察。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__item">
+                        <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
+                            <picture>
+                                <source srcset="../assets/img/project6.png" type="image/png">
+                                <img src="../assets/img/project6.png" alt="Excel Master 遊戲化學習平台">
+                            </picture>
+                            <div class="projects__overlay">
+                                <h3>Excel Master</h3>
+                                <p>遊戲化 Excel 學習平台：關卡任務、互動挑戰與 AI 支架學習，提升投入度與可量化的能力成長。</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">聯絡資訊</h2>
+
+                <div class="contact__container bd-grid">
+                    <!-- Compact Contact Information row -->
+                    <div class="contact__info" aria-label="聯絡資訊">
+                        <!-- Email -->
+                        <div class="contact__info-item">
+                            <i class='bx bx-envelope contact__info-icon' aria-hidden="true"></i>
+                            <div class="contact__info-main">
+                                <a href="mailto:jack0703123@gmail.com?subject=Hello%20from%20your%20portfolio" aria-label="寄信給 Jackie">jack0703123@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact__info-item">
+                            <i class='bx bx-map contact__info-icon' aria-hidden="true"></i>
+                            <div class="contact__info-main">
+                                <a href="https://maps.google.com/?q=Taipei%20City%2C%20Taiwan" target="_blank" rel="noopener noreferrer" aria-label="在 Google 地圖開啟位置">台北市，台灣</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/f/mdkwavbv" method="POST" class="contact__form" novalidate>
+                        <!-- Honeypot field to reduce spam -->
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+                        <div class="contact__field">
+                            <label for="contact-name" class="contact__label">姓名</label>
+                            <input type="text" id="contact-name" name="name" placeholder="請輸入姓名" autocomplete="name" class="contact__input" />
+                        </div>
+
+                        <div class="contact__field">
+                            <label for="contact-email" class="contact__label">電子郵件</label>
+                            <input type="email" id="contact-email" name="email" placeholder="請輸入電子郵件" autocomplete="email" required class="contact__input" />
+                        </div>
+
+                        <div class="contact__field contact__field--full">
+                            <label for="contact-subject" class="contact__label">主旨</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="請輸入主旨" autocomplete="on" class="contact__input" required />
+                        </div>
+
+                        <div class="contact__field contact__field--full">
+                            <label for="contact-message" class="contact__label">訊息</label>
+                            <textarea id="contact-message" name="message" placeholder="請輸入訊息" rows="8" class="contact__input"></textarea>
+                        </div>
+
+                        <button type="submit" class="contact__button button contact__button--full">送出訊息</button>
+                        <div id="contact-status" class="contact__status" role="status" aria-live="polite" style="display:none;"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <button id="to-top" class="footer__to-top" aria-label="回到頂部" title="回到頂部">
+                <i class='bx bx-chevron-up' aria-hidden="true"></i>
+            </button>
+            <p class="footer__title">Jackie Tung</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/jackietung0703/" target="_blank" rel="noopener noreferrer" class="footer__icon" aria-label="Facebook"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/jt.datastoryteller" target="_blank" rel="noopener noreferrer" class="footer__icon" aria-label="Instagram"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.threads.com/@jt.datastoryteller" target="_blank" rel="noopener noreferrer" class="footer__icon" aria-label="Threads">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill="currentColor" d="M12.70446875 7.672075c-0.2617 -0.1969875 -0.5428375 -0.36673125 -0.83903125 -0.50658125 -0.3015375 -2.25325 -1.80923125 -2.96336875 -2.49523125 -3.17143125 -1.49110625 -0.45230625 -3.2046 0.08970625 -3.984075 1.258925 -0.25765625 0.3864875 -0.0003125 0.9069625 0.463225 0.93685625 0.21513125 0.013875 0.42131875 -0.088075 0.5409 -0.26744375 0.4802 -0.720675 1.6584625 -1.06744375 2.63016875 -0.7742 0.750075 0.22615625 1.26796875 0.7764625 1.519 1.583075 -0.37993125 -0.07233125 -0.765875 -0.108425 -1.15263125 -0.1078 -1.04935625 0 -2.03161875 0.27063125 -2.76435625 0.7613875 -0.8624 0.582725 -1.33731875 1.44436875 -1.33731875 2.42436875 0 1.5514125 1.1956 2.6776625 2.84275 2.6776625 0.9786125 -0.00666875 1.9128 -0.40944375 2.5894625 -1.11645 0.485475 -0.505075 1.05538125 -1.3840625 1.17675625 -2.79676875 0.02864375 0.0196 0.05578125 0.03995625 0.08291875 0.06030625 0.7621375 0.57594375 1.1481125 1.37728125 1.1481125 2.38140625 0 1.45944375 -1.533325 3.61845625 -4.82461875 3.61845625 -2.01503125 0 -3.42849375 -0.652075 -4.32255625 -1.99316875C3.24445625 11.543075 2.87280625 9.9796 2.87280625 8s0.37165 -3.543075 1.10514375 -4.640675c0.89405625 -1.34109375 2.30751875 -1.99316875 4.32255 -1.99316875 2.48241875 0 4.07076875 0.99884375 4.86456875 3.05458125 0.16195625 0.43508125 0.73416875 0.5316875 1.0299875 0.1738875 0.1403875 -0.16980625 0.177 -0.40265 0.09550625 -0.60735C13.32714375 1.48375625 11.255575 0.16 8.3005 0.16c-2.41230625 0 -4.2072125 0.85109375 -5.326675 2.52990625C2.10614375 3.9918 1.66665625 5.7776625 1.66665625 8s0.4394875 4.0082 1.30716875 5.31009375c1.1194625 1.6788125 2.91436875 2.52990625 5.326675 2.52990625 2.26681875 0 3.68630625 -0.86541875 4.47784375 -1.59061875 0.9724625 -0.89104375 1.552925 -2.103225 1.552925 -3.23399375 0 -1.38255625 -0.56236875 -2.53895625 -1.6268 -3.3433125Zm-2.856325 2.86461875c-0.4490125 0.4710125 -1.06955625 0.740225 -1.720275 0.74630625 -0.81490625 0 -1.6366 -0.45230625 -1.6366 -1.47150625 0 -0.95210625 0.90461875 -1.97583125 2.895525 -1.97583125 0.44834375 -0.0012125 0.89465625 0.0601875 1.3260125 0.18243125 0 1.0614125 -0.3015375 1.93135 -0.86465625 2.5163375Z" stroke-width="0.0625"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copy">© 2025 Chien-Chi (Jackie) Tung. 保留所有權利。</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

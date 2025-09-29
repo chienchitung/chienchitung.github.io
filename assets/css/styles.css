@@ -122,6 +122,11 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
+.nav__logo { white-space: nowrap; }
+.nav > div:first-child { flex-shrink: 0; }
+@media screen and (min-width: 768px) {
+  .nav__list { flex-wrap: nowrap; }
+}
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -141,6 +146,7 @@ img {
   position: relative;
   color: #fff;
 }
+.nav__link { font-size: .95rem; }
 .nav__link:hover {
   position: relative;
 }
@@ -160,6 +166,25 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/* Language toggle */
+.nav__lang {
+  margin-left: .75rem;
+  padding: .35rem .6rem;
+  font-size: .85rem;
+  border-radius: .375rem;
+  border: 1px solid rgba(17,24,39,.15);
+  background: #fff;
+  color: var(--second-color);
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.nav__lang:hover { background: rgba(30,64,175,.05); border-color: rgba(30,64,175,.25); color: var(--first-color); }
+.nav__lang:active { transform: translateY(1px); }
+
+@media screen and (max-width: 767px) {
+  .nav__lang { position: relative; z-index: 101; }
 }
 
 /*Active menu*/
@@ -411,7 +436,7 @@ img {
 .experience__time { padding-right: 1rem; }
 .experience__rounder { position: relative; display:block; width:16px; height:16px; background-color: var(--first-color); border-radius:50%; margin-top:.25rem; }
 .experience__line { display:block; width:2px; height:100%; background-color: var(--first-color); transform: translate(7px, 0); }
-.experience__data { text-align: left; }
+.experience__data { text-align: left; flex: 1; position: relative; }
 
 /* Experience text styles aligned with Education */
 .experience__title { font-size: var(--normal-font-size); font-weight: var(--font-semi); margin-bottom: var(--mb-2); color: var(--second-color); }
@@ -657,23 +682,22 @@ img {
     width: 80px;
     top: 3rem;
   }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
+  .nav { height: calc(var(--header-height) + 1.5rem); }
   .nav__list {
     display: flex;
     padding-top: 0;
   }
   .nav__item {
-    margin-left: var(--mb-6);
+    /* Make spacing responsive so the long English name + language toggle fit on one line */
+    margin-left: clamp(1.1rem, 3vw, 3rem);
     margin-bottom: 0;
   }
   .nav__toggle {
     display: none;
   }
-  .nav__link {
-    color: var(--second-color);
-  }
+  .nav__link { color: var(--second-color); }
+  /* Keep language toggle compact and aligned on desktop */
+  .nav__lang { margin-left: 1rem; padding: .28rem .55rem; font-size: .8rem; }
   .home {
     padding: 5.5rem 0 2rem;
   }

@@ -11,6 +11,10 @@
 
         <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- i18n alternates -->
+    <link rel="alternate" href="./" hreflang="en">
+    <link rel="alternate" href="./" hreflang="x-default">
+    <link rel="alternate" href="zh-tw/" hreflang="zh-Hant-TW">
 
         <title>Portfolio website complete</title>
     </head>
@@ -24,15 +28,17 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link" data-i18n="nav.experience">Experience</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link" data-i18n="nav.education">Education</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
+
+                <button id="lang-toggle" class="nav__lang" type="button" aria-label="Switch language">EN</button>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
@@ -482,7 +488,7 @@
                         <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
                             <picture>
                                 <source srcset="assets/img/project3.png" type="image/png">
-                                <img src="assets/img/work3.jpg" alt="friDay Shopping Business Planning Analytics">
+                                <img src="assets/img/project3.png" alt="friDay Shopping Business Planning Analytics">
                             </picture>
                             <div class="projects__overlay">
                                 <h3>friDay Shopping · Sr. Business Planning Analyst</h3>
@@ -494,7 +500,7 @@
                         <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
                             <picture>
                                 <source srcset="assets/img/project4.png" type="image/png">
-                                <img src="assets/img/work4.jpg" alt="Circles.Life Operations & Billing Analytics">
+                                <img src="assets/img/project4.png" alt="Circles.Life Operations & Billing Analytics">
                             </picture>
                             <div class="projects__overlay">
                                 <h3>Circles.Life · Operations & Billing</h3>
@@ -518,7 +524,7 @@
                         <a href="javascript:void(0)" class="projects__img" aria-disabled="true">
                             <picture>
                                 <source srcset="assets/img/project6.png" type="image/png">
-                                <img src="assets/img/work6.jpg" alt="Excel Master – Gamified learning platform for Excel mastery">
+                                <img src="assets/img/project6.png" alt="Excel Master – Gamified learning platform for Excel mastery">
                             </picture>
                             <div class="projects__overlay">
                                 <h3>Excel Master</h3>

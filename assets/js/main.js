@@ -129,3 +129,72 @@ if (toTopBtn) {
         }
     });
 })();
+
+/*==================== SIMPLE I18N (EN / ZH-TW) ====================*/
+(() => {
+    const DICT = {
+        'en': {
+            'nav.home': 'Home',
+            'nav.about': 'About',
+            'nav.experience': 'Experience',
+            'nav.skills': 'Skills',
+            'nav.education': 'Education',
+            'nav.projects': 'Projects',
+            'nav.contact': 'Contact',
+        },
+        'zh-tw': {
+            'nav.home': '首頁',
+            'nav.about': '關於',
+            'nav.experience': '經歷',
+            'nav.skills': '技能',
+            'nav.education': '學歷',
+            'nav.projects': '專案',
+            'nav.contact': '聯絡',
+        }
+    };
+
+    const storageKey = 'site-lang';
+    const pathIsZh = /^\/zh-tw(\/|$)/i.test(window.location.pathname);
+    // Path takes precedence so that /zh-tw always shows zh-tw even if localStorage says otherwise
+    let current = pathIsZh ? 'zh-tw' : 'en';
+    localStorage.setItem(storageKey, current);
+
+    const applyI18n = (lang) => {
+        const map = DICT[lang] || DICT.en;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (map[key]) el.textContent = map[key];
+        });
+        const btn = document.getElementById('lang-toggle');
+        if (btn) {
+            btn.textContent = lang === 'en' ? 'EN' : '繁中';
+            const target = lang === 'en' ? '繁體中文' : 'English';
+            btn.setAttribute('aria-label', `Switch language to ${target}`);
+            btn.setAttribute('title', target);
+        }
+        // Update html lang attribute for a11y/SEO
+        document.documentElement.setAttribute('lang', lang === 'zh-tw' ? 'zh-Hant-TW' : 'en');
+    };
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => applyI18n(current));
+    } else {
+        applyI18n(current);
+    }
+
+    // Bind toggle: also navigate to the corresponding path so URL reflects language
+    const btn = document.getElementById('lang-toggle');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const next = current === 'en' ? 'zh-tw' : 'en';
+            localStorage.setItem(storageKey, next);
+            // Always go to top (no hash)
+            if (next === 'zh-tw') {
+                window.location.href = '/zh-tw/';
+            } else {
+                window.location.href = '/';
+            }
+        });
+    }
+})();
