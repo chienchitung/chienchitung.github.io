@@ -689,7 +689,7 @@ img {
   }
   .nav__item {
     /* Make spacing responsive so the long English name + language toggle fit on one line */
-    margin-left: clamp(1.1rem, 3vw, 3rem);
+    margin-left: clamp(0.75rem, 2vw, var(--mb-5));
     margin-bottom: 0;
   }
   .nav__toggle {
