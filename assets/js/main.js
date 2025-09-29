@@ -130,6 +130,72 @@ if (toTopBtn) {
     });
 })();
 
+/* ==================== PROJECT MODAL (LIGHTBOX) ==================== */
+(function(){
+    // Open modal when project card is clicked or activated with Enter/Space
+    function openProjectModal(triggerEl) {
+        if (!triggerEl) return;
+        // Create modal container if missing
+        let modal = document.querySelector('.project-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.className = 'project-modal';
+            modal.innerHTML = `
+                <div class="project-modal__backdrop" tabindex="-1">
+                    <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-label="Project details" tabindex="0">
+                        <button class="project-modal__close" aria-label="Close project details">×</button>
+                        <div class="project-modal__content"></div>
+                    </div>
+                </div>`;
+            document.body.appendChild(modal);
+
+            // Close handlers
+            modal.querySelector('.project-modal__close').addEventListener('click', closeProjectModal);
+            modal.querySelector('.project-modal__backdrop').addEventListener('click', function(e){
+                if (e.target === e.currentTarget) closeProjectModal();
+            });
+        }
+
+        const content = triggerEl.querySelector('.projects__overlay')?.innerHTML || '';
+        modal.querySelector('.project-modal__content').innerHTML = content;
+        modal.classList.add('open');
+        // prevent background scroll
+        document.documentElement.style.overflow = 'hidden';
+        // focus dialog for accessibility
+        const dialog = modal.querySelector('.project-modal__dialog');
+        if (dialog) dialog.focus();
+    }
+
+    function closeProjectModal(){
+        const modal = document.querySelector('.project-modal');
+        if (!modal) return;
+        modal.classList.remove('open');
+        document.documentElement.style.overflow = '';
+    }
+
+    // Delegate click events
+    document.addEventListener('click', function(e){
+        const btn = e.target.closest('.projects__img[role="button"]');
+        if (!btn) return;
+        openProjectModal(btn);
+    });
+
+    // Keyboard support: Enter/Space to open, Escape to close
+    document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') {
+            closeProjectModal();
+            return;
+        }
+        if (e.key === 'Enter' || e.key === ' ') {
+            const active = document.activeElement;
+            if (active && active.classList && active.classList.contains('projects__img')) {
+                e.preventDefault();
+                openProjectModal(active);
+            }
+        }
+    });
+})();
+
 /*==================== SIMPLE I18N (EN / ZH-TW) ====================*/
 (() => {
     const DICT = {

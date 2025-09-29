@@ -737,3 +737,24 @@ img {
   .hero__portrait { width: 400px; height: 400px; }
   .home__photo { width: 420px; }
 }
+
+/* ===== PROJECT MODAL & ACCESSIBILITY ENHANCEMENTS ===== */
+/* Focus styles for project cards */
+.projects__img:focus {
+  outline: 3px solid rgba(79,140,255,0.15);
+  outline-offset: 4px;
+}
+
+/* Modal - hidden by default */
+.project-modal { display: none; }
+.project-modal.open { display: block; position: fixed; inset: 0; z-index: 1200; }
+.project-modal__backdrop { display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.55); height:100vh; padding:2rem; }
+.project-modal__dialog { background:#fff; border-radius:8px; max-width:900px; width:100%; box-shadow:0 12px 40px rgba(2,6,23,0.5); padding:1.25rem; outline:none; position:relative; }
+.project-modal__close { position:absolute; top:0.5rem; right:0.5rem; background:transparent; border:0; font-size:1.4rem; cursor:pointer; color:#111827; }
+.project-modal__content { padding-top: .75rem; color: #111827; }
+.project-modal__content h3 { margin-top: 0; color: var(--second-color); }
+
+/* Responsive dialog */
+@media (max-width: 600px) {
+  .project-modal__dialog { max-width: 520px; padding: 1rem; }
+}
