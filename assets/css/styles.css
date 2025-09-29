@@ -256,7 +256,7 @@ img {
 .hero__portrait { position: relative; width: 260px; height: 260px; border-radius: 9999px; overflow: hidden; border: 4px solid #fff; box-shadow: 0 10px 36px rgba(0,0,0,.15); }
 .hero__portrait .home__photo { width: 100%; height: 100%; object-fit: cover; }
 
-.scroll-indicator { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.4rem; z-index: 5; }
+.scroll-indicator { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.4rem; }
 .scroll-indicator__text { font-size:.8rem; color: rgba(17,24,39,.6); }
 .scroll-indicator__mouse { width: 24px; height: 40px; border: 2px solid rgba(17,24,39,.2); border-radius: 999px; display:flex; justify-content:center; padding:4px; }
 .scroll-indicator__dot { width:6px; height:6px; background: var(--first-color); border-radius:999px; animation: bounce 1.4s infinite; }
@@ -598,6 +598,10 @@ img {
     width: 200px;
   }
 }
+/* Hide scroll hint on small screens to prevent overlap with portrait */
+@media screen and (max-width: 576px) {
+  .scroll-indicator { display: none; }
+}
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
@@ -634,10 +638,6 @@ img {
   .contact__container {
     justify-items: center;
   }
-}
-/* On small screens, move the scroll indicator to the left to avoid portrait overlap */
-@media screen and (max-width: 576px) {
-  .scroll-indicator { left: 1rem; bottom: 1rem; transform: none; align-items: flex-start; }
 }
 @media screen and (min-width: 768px) {
   .contact__info { grid-template-columns: repeat(2, minmax(0, max-content)); justify-content: center; justify-items: center; gap: 1rem 3rem; margin-bottom: 1.25rem; }
